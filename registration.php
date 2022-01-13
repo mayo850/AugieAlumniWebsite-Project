@@ -22,7 +22,6 @@ $conn = new mysqli($servername, $login, $password, $dbname);
 if ($conn->connect_error) {
   die("Connection failed: " . $conn->validateInputconnect_error());
 }
-echo "Connected successfully";
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
   $username = test_input($_POST["username"]);
@@ -41,7 +40,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 $sql = "INSERT INTO users (username, email, gradYear, workPlace, city, phoneNumber, firstName, lastName, dob, augieID, password) VALUES ('$username', '$email', '$gradYear' ,'$workPlace', '$city', '$phone', '$firstName', '$lastName', '$dob', '$augieID', '$password')";
 
 if ($conn->query($sql) === TRUE) {
-  echo "New record created successfully";
 } else {
   echo "Error: " . $sql . "<br>" . $conn->error;
 }
