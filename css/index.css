@@ -1,0 +1,36 @@
+body
+{
+    margin: 0;
+    padding: 0;
+    background-image: url(images/'old.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    font-family: 'Arial';
+
+}
+
+
+h1{
+  color: #F7CA11;
+  text-align: center;
+}
+
+h2{
+  color: #F7CA11;
+  text-align: center;
+}
+
+a:link, a:visited {
+  background-color: #none;
+  color: #FFDE3A;
+  padding: 14px 25px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  border: 2px solid #FFDE3A;
+}
+
+a:hover, a:active {
+  background-color: blue;
+}

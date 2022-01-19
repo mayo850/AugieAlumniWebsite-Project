@@ -172,3 +172,10 @@ a{
 a:hover{
   background: #2ecc71;
 }
+
+h1{
+  color: gold;
+  text-transform: uppercase;
+  font-weight: 500;
+  font-size: 30px;
+}
