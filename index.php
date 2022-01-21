@@ -21,5 +21,12 @@ session_start();
 
 	<br>
 	<h2> Hello, <?php echo $user_data['user_name']; ?> </h2>
+	<div class="infoDisplay" id = "infoDisplay">
+            <script src="js/searchUser.js"></script>
+            <form class="searchBar">
+                <label>Search for user: </label><input type="text" id="users" name="users" onchange="searchUser(this.value)">
+            </form>
+                <h1 name = "userInfo" id = "userInfo"></h1>
+        </div>
 </body>
 </html>

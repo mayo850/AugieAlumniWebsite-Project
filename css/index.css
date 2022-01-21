@@ -34,3 +34,15 @@ a:link, a:visited {
 a:hover, a:active {
   background-color: blue;
 }
+
+div.infoDisplay {
+  background-color: blue;
+  width: 70%;
+  margin-left: 15%;
+  text-align: center;
+  display: inline-block;
+}
+
+.searchBar {
+  padding-top: 10px;
+}
